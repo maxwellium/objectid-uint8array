@@ -1,16 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const objectid_1 = require("../src/objectid");
-// import { randomBytes } from 'crypto';
-// const globalAny: any = global;
-// Object.defineProperty( globalAny, 'crypto', {
-//   value: {
-//     getRandomValues: ( arr: Uint8Array ) => randomBytes( arr.length ),
-//   },
-// } );
-// globalAny.crypto = {
-//   getRandomValues: ( arr: Uint8Array ) => randomBytes( arr.length ),
-// };
 const FIXTURE = new Uint8Array([92, 174, 23, 118, 29, 211, 194, 18, 58, 99, 172, 136]);
 test('toHexString', () => {
     expect(objectid_1.toHexString(FIXTURE)).toBe('5cae17761dd3c2123a63ac88');
