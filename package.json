@@ -1,24 +1,26 @@
 {
   "name": "objectid-uint8array",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
   "files": [
     "build/src"
   ],
+  "type": "module",
   "author": "maxwellium",
   "license": "MIT",
   "repository": "github:maxwellium/objectid-uint8array",
   "keywords": [],
   "scripts": {
-    "test": "jest",
-    "compile": "tsc -p ."
+    "build": "tsc",
+    "test": "jest --ci --coverage"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.11",
-    "@types/node": "^11.13.2",
-    "jest": "^24.7.1",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.9",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.1.0",
     "typescript": "^3.4.3"
   }
 }
